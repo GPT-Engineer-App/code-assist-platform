@@ -4,10 +4,10 @@
     "version": "0.0.0",
     "type": "module",
     "scripts": {
-        "dev": "vite",
-        "build": "vite build --mode development",
+        "dev": "vite --config src/frontend/vite.config.js",
+        "build": "vite build --config src/frontend/vite.config.js --mode development",
         "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-        "preview": "vite preview"
+        "preview": "vite preview --config src/frontend/vite.config.js"
     },
     "devDependencies": {
         "@types/react": "^18.2.38",
